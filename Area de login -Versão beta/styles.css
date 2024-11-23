@@ -1,0 +1,142 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo do body */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1c1c1c, #4e4e4e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+  }
+  
+  /* Container principal do formulário */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Caixa de login */
+  .login-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Efeito de hover na caixa */
+  .login-box:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Título do formulário */
+  h2 {
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  /* Subtítulo */
+  .login-subtitle {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo dos inputs */
+  .input-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Efeito de foco nos inputs */
+  .input-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  /* Estilo do botão de login */
+  .login-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .login-btn:active {
+    background-color: #00408d;
+  }
+  
+  /* Link de esqueci minha senha */
+  .forgot-password {
+    margin-top: 10px;
+  }
+  
+  .forgot-password a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 500px) {
+    .login-box {
+      padding: 30px;
+      width: 90%;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    .login-btn {
+      font-size: 16px;
+    }
+  }
+  
